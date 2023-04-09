@@ -131,6 +131,11 @@ require './elements_TMNN/mod/userCls.php';
                         </td>
                         <td align=center>
                             <?php
+                            if (isset($_SESSION['ADMIN']) and $v->username == 'admin') {
+                                ?>
+                                    <img class="iconimg" src="./img_TMNN/xóa.png" />
+                                <?php
+                                } else
                             if (isset($_SESSION['ADMIN'])) {
                             ?>
                                 <a href="./elements_TMNN/mUser/userAct.php?reqact=deleteuser&iduser=<?php echo $v->iduser; ?>">
@@ -145,15 +150,15 @@ require './elements_TMNN/mod/userCls.php';
                             ?>
                             <?php
                             //admin khong duoc update acc admin
-                            if (isset($_SESSION['ADMIN'])) {
+                             if (isset($_SESSION['USER']) and $v->username == 'admin') {
                             ?>
                                 <img class="iconimg" src="./img_TMNN/update.png" />
                             <?php
-                            } else if (isset($_SESSION['USER']) and $v->username == 'admin') {
-                            ?>
-                                <img class="iconimg" src="./img_TMNN/update.png" />
-                            <?php
-                            } else {
+                            } else if (isset($_SESSION['USER']) and $v->ability == 0) {
+                                ?>
+                                    <img class="iconimg" src="./img_TMNN/update.png" />
+                                <?php
+                                } else {
                             ?>
                                 <temps class="btnupdate" value="<?php echo $v->iduser; ?>">
                                     <img class="iconimg" src="./img_TMNN/update.png" />
