@@ -1,0 +1,44 @@
+@media all {
+    #left {
+        float: left;
+        width: 55%;
+        height: 500px;
+        text-align: center;
+        margin-top: 150px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #ho {
+        font-size: 50px;
+    }
+    #ten {
+        font-size: 80px;
+    }
+    #intro {
+        margin: 30px 0px 0px 10px;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    #right {
+        float: left;
+        width: 45%;
+        height: 720px;
+        background-color: darkslategrey;
+    }
+}
+
+body {
+    background-color: cornsilk;
+}
+
+#avt {
+    image-rendering: pixelated;
+    object-fit: contain;
+    margin-top: 50px;
+    box-shadow: 6px 6px 6px cornsilk;
+}
+
+#avt:hover {
+    transform: rotate3d(1, 1, 1, 20deg);
+    transition: 10s;
+}

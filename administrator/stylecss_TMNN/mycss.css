@@ -1,0 +1,213 @@
+body {
+    background-color: #CE9F41;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#top_div {
+    height: 150px;
+    width: 100%;
+}
+
+#left_div {
+    height: 500px;
+    width: 10%;
+    float: left;
+}
+
+#center_div {
+    height: 500px;
+    width: 60%;
+    float: left;
+}
+
+#right_div {
+    height: 500px;
+    width: 30%;
+    float: left;
+}
+
+#bottom_div {
+    height: 100px;
+    width: 100%;
+    clear: both;
+}
+
+p {
+    color: red;
+}
+
+.cls01 {
+    color: blueviolet;
+}
+
+#id01 {
+    color: yellowgreen;
+}
+
+
+/*MENU*/
+
+.cateOrder {
+    font-weight: bold;
+}
+
+.itemOrder {
+    font-style: italic;
+}
+
+ol {
+    list-style: aquate;
+    margin: 0;
+    padding-left: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/*Slide image*/
+
+#DivSlideImage {
+    width: 80%;
+    margin: auto;
+}
+
+#imgView {
+    width: 600px;
+    height: 500px;
+}
+
+#DivList {
+    width: 600px;
+    height: 100px;
+}
+
+.imgcls {
+    width: 90px;
+    height: auto;
+}
+
+.imgcls:hover {
+    width: 100px;
+}
+
+
+/*ajax*/
+
+#content {
+    width: 84%;
+    height: auto;
+}
+
+#video {
+    height: auto;
+}
+
+#getContent {
+    width: 100%;
+    height: auto;
+}
+
+.linkpage {
+    cursor: pointer;
+}
+
+.iconimg {
+    height: 30px;
+}
+
+
+/*nut update*/
+
+.btnupdate:hover {
+    cursor: pointer;
+}
+
+#signoutbutton {
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    right: 10px;
+    opacity: 0.75;
+}
+
+.imgtable {
+    height: 100px;
+}
+
+.ql {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.iconql {
+    height: 30px;
+}
+
+.title_mod {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top_ql {
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#logincenter {
+    margin: 280px 200px;
+    border-radius: 20px;
+    background-color: #CE9F41;
+    width: 500px;
+    align-items: center;
+    padding: 20px;
+}
+
+.loginbody {
+    background-image: url(../img_TMNN/loginbg.png);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 15px;
+    background-color: antiquewhite;
+    padding: 8px;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: ridge;
+    color: #000;
+}
+
+button {
+    font-size: 15px;
+    background-color: antiquewhite;
+    padding: 8px;
+    border-width: 3px;
+    border-radius: 15px;
+    border-style: ridge;
+    color: #000;
+}
+
+.tb table,
+.tb th,
+.tb td {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+table.tb {
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tb tr:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
