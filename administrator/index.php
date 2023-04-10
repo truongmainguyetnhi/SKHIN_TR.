@@ -12,11 +12,7 @@ session_start();
 </head>
 
 <body>
-    <?php
-    if (!isset($_SESSION['USER']) and !isset($_SESSION['ADMIN'])) {
-        header('location:userLogin.php');
-    }
-    ?>
+    
     <div id="top_div">
         <?php require './elements_TMNN/top.php'; ?>
     </div>
@@ -31,7 +27,7 @@ session_start();
     </div>
     <div id="bottom_div"></div>
     <div id="signoutbutton">
-        <a href="elements_TMNN/mUser/userAct.php?reqact=userlogout">
+        <a href="../index.php">
             <img src="img_TMNN/logout.png" height="50px" class="iconbutton" />
         </a>
     </div>

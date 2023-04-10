@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <html>
 
 <head>
@@ -9,13 +12,25 @@
 </head>
 
 <body>
+    <?php
+    if (!isset($_SESSION['USER']) and !isset($_SESSION['ADMIN'])) {
+        header('location: administrator/userLogin.php');
+    }
+    ?>
+
     <div id="wrapper">
         <header>
             <div class="inner-header container">
-                <a href="./index.php" id="logo">trangnon</a><img height="50px" src="administrator/img_TMNN/moon.png">
+                <a href="./index.php" id="logo">trangnon</a><img height="60px" src="administrator/img_TMNN/moon.png">
                 <nav>
                     <ul id="main-menu">
-                        <li><a href="./index.php">Trang chủ</a></li>
+                        <li>
+                            <?php if (isset($_SESSION['ADMIN'])) { ?>
+                                <a href="administrator/index.php">Trang chủ</a>
+                            <?php } else { ?>
+                                <a href="#">Trang chủ</a> <?php } ?>
+                            ?>
+                        </li>
                         <li>
                             <div id="menusp"><a href="#">Sản phẩm</a></div>
                             <div id="menu">
@@ -23,6 +38,13 @@
                             </div>
                         </li>
                         <li><a href="info/index.php">Liên hệ</a></li>
+                        <li>
+                            <div id="signoutbutton">
+                                <a href="administrator/elements_TMNN/mUser/userAct.php?reqact=userlogout">
+                                    <img src="administrator/img_TMNN/logout.png" height="30px" class="iconbutton" />
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </nav>
             </div>

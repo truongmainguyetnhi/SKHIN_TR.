@@ -2,11 +2,11 @@
 <html >
 <head>
     <meta charset="UTF-8">
-    <title>Login website</title>
+    <title>Login SKHIN_TR.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script type="text/javascript" src="js_TMNN/jscript.js"></script>
     <link rel="stylesheet" href="stylecss_TMNN/mycss.css" type="text/css" />
-    <link rel="shortcut icon" type="image/png" href="./img_TMNN/login.png" />
+    <link rel="shortcut icon" type="image/png" href="./img_TMNN/market.png" />
     
 </head>
 <body class="loginbody">

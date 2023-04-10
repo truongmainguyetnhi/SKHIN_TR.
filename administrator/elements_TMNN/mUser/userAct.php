@@ -75,10 +75,10 @@
                     else{
                         $_SESSION['USER'] = $username;
                     }
-                    header('location:../../index.php?req=userview&result=ok');
+                    header('location:../../../index.php');
                 }
                 else{
-                    header('location:../../index.php?req=userview&result=notok');
+                    header('location:../../userLogin.php');
                 }
                 break;
                 case 'userlogout':
@@ -91,7 +91,7 @@
                     }
                     setcookie( $namelogin, $timelogin, time() + (86400 * 30), "/");
                     session_destroy();
-                    header('location:../../index.php?');
+                    header('location: ../../userLogin.php');
                     break;
                 default:
                     header('location:../../index.php?req=userview');
