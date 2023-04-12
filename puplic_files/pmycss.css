@@ -50,8 +50,9 @@ ul#main-menu a {
 }
 
 #banner {
-    background: url(../administrator/img_TMNN/arlo2.png);
+    background: url(../administrator/img_TMNN/banner.png);
     min-height: 480px;
+    background-position: 0px 60px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

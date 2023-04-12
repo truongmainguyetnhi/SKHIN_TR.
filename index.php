@@ -21,13 +21,13 @@ session_start();
     <div id="wrapper">
         <header>
             <div class="inner-header container">
-                <a href="./index.php" id="logo">trangnon</a>
+                <a href="./index.php" id="logo">SKHIN_TR.</a>
                 <?php if (isset($_SESSION['ADMIN'])) { ?>
                     <a href="administrator/index.php">
-                        <img height="60px" src="administrator/img_TMNN/moon.png"></a>
+                        <img height="60px" src="administrator/img_TMNN/market.png"></a>
                 <?php } else { ?>
                     <a href="./index.php">
-                        <img height="60px" src="administrator/img_TMNN/moon.png"></a> <?php } ?>
+                        <img height="60px" src="administrator/img_TMNN/market.png"></a> <?php } ?>
                 <nav>
                     <ul id="main-menu">
                         <li>

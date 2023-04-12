@@ -18,5 +18,5 @@ if (isset($_GET['reqHanghoa'])) {
         <p><b>Mô tả: </b><?php echo $obj->mota; ?></p>
         <p id="giathamkhao"><span><?php echo $obj->giathamkhao; ?></span><sup>₫</sup></p>
     </div>
-    <center><button class="gio">Thêm vào giỏ hàng</button></center>
+    <button class="gio">Thêm vào giỏ hàng</button>
 </div>
