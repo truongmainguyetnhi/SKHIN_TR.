@@ -21,15 +21,17 @@ session_start();
     <div id="wrapper">
         <header>
             <div class="inner-header container">
-                <a href="./index.php" id="logo">trangnon</a><img height="60px" src="administrator/img_TMNN/moon.png">
+                <a href="./index.php" id="logo">trangnon</a>
+                <?php if (isset($_SESSION['ADMIN'])) { ?>
+                    <a href="administrator/index.php">
+                        <img height="60px" src="administrator/img_TMNN/moon.png"></a>
+                <?php } else { ?>
+                    <a href="./index.php">
+                        <img height="60px" src="administrator/img_TMNN/moon.png"></a> <?php } ?>
                 <nav>
                     <ul id="main-menu">
                         <li>
-                            <?php if (isset($_SESSION['ADMIN'])) { ?>
-                                <a href="administrator/index.php">Trang chủ</a>
-                            <?php } else { ?>
-                                <a href="#">Trang chủ</a> <?php } ?>
-                            ?>
+                            <a href="./index.php">Trang chủ</a>
                         </li>
                         <li>
                             <div id="menusp"><a href="#">Sản phẩm</a></div>
@@ -41,10 +43,15 @@ session_start();
                         <li>
                             <div id="signoutbutton">
                                 <a href="administrator/elements_TMNN/mUser/userAct.php?reqact=userlogout">
-                                    <img src="administrator/img_TMNN/logout.png" height="30px" class="iconbutton" />
+                                    <img src="administrator/img_TMNN/logout.png" height="30px"/>
                                 </a>
                             </div>
                         </li>
+                        <li>
+                        <div class="cart_icon"><img src="administrator/img_TMNN/cart.png" height="30px">
+                            <sup> 0 </sup></div>
+                        </li>
+                        
                     </ul>
                 </nav>
             </div>
@@ -66,6 +73,29 @@ session_start();
             </div>
         </div>
     </div>
+    <section class="cart">
+        <img align="left" class="x" src="administrator/img_TMNN/x.png" >
+        <h2>Giỏ hàng</h2>
+        <form action="">
+            <table >
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>SL</th>
+                        <th>Chọn</th>
+                    </tr>
+                </thead>
+                <tbody id="myTable">
+                    
+                </tbody>
+            </table>
+            <div class="price_total">
+                <p>Tổng tiền: <span>0</span><sup>₫</sup></p>
+            </div>
+            <button>Thanh toán</button>
+        </form>
+    </section>
     <script src="https://code.jquery.com/jquery-3.6.4.js" type="text/javascript"></script>
     <script src="puplic_files/pjs.js" type="text/javascript"></script>
 </body>

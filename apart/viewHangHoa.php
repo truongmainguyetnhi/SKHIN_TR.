@@ -12,10 +12,11 @@ if (isset($_GET['reqHanghoa'])) {
 }
 ?>
 <div class="itemsViewHangHoa">
-    <center><img class="imgViewHangHoa" src="data:image/png;base64,<?php echo ($obj->hinhanh); ?>"></center><br>
-    <div class="mota"> 
-        <b><?php echo $obj->tenhanghoa; ?></b><br>
-    <b>Mô tả: </b><?php echo $obj->mota; ?><br>
-    <b>Giá bán: </b><?php echo $obj->giathamkhao; ?> VNĐ<br><br></div>
-    <center><button onclick="goBack()">Trở về</button></center>
+    <img class="imgViewHangHoa" src="data:image/png;base64,<?php echo ($obj->hinhanh); ?>"><br>
+    <div class="mota">
+        <h1><?php echo $obj->tenhanghoa; ?></h1>
+        <p><b>Mô tả: </b><?php echo $obj->mota; ?></p>
+        <p id="giathamkhao"><span><?php echo $obj->giathamkhao; ?></span><sup>₫</sup></p>
+    </div>
+    <center><button class="gio">Thêm vào giỏ hàng</button></center>
 </div>
