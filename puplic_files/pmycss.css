@@ -56,6 +56,8 @@ ul#main-menu a {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #CE9F41;
+    color: #000;
 }
 
 header {
@@ -98,7 +100,7 @@ header {
     cursor: pointer;
     font-weight: bold;
     color: #000;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .imgmenu:hover {
@@ -128,7 +130,6 @@ header {
     padding: 5px;
     color: #000;
     border-radius: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .imgHanghoa:hover {
@@ -155,17 +156,23 @@ header {
 }
 
 button {
-    background-color: #000;
     font-size: 15px;
     margin: 10px 0px 30px;
     padding: 5px 10px 5px 10px;
-    border-radius: 10px;
-    color: #CE9F41;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: 1px solid #cccccc;
 }
 
 .gio {
-    background-color: #000;
-    color: #f5f5f5;
+    color: #000;
+}
+
+.gio:hover {
+    background-color: #CE9F41;
+    color: #000;
 }
 
 button:hover {
@@ -175,7 +182,6 @@ button:hover {
 
 .mota {
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
 }
 

@@ -56,8 +56,8 @@ session_start();
                 </nav>
             </div>
         </header>
-        <div id="banner">
-
+        <div id="banner">  
+            
         </div>
         <div id="content" class="container">
             <h1>Best seller</h1>
