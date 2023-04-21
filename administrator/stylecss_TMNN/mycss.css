@@ -203,9 +203,8 @@ a {
 input {
     font-size: 15px;
     background-color: antiquewhite;
-    border-width: 3px;
+    border-width: 2px;
     padding: 5px 15px 5px 15px;
-    border-style: ridge;
     color: #000;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -216,10 +215,12 @@ input {
 button {
     font-size: 15px;
     background-color: antiquewhite;
-    padding: 8px;
-    border-width: 3px;
-    border-radius: 15px;
-    border-style: ridge;
+    padding: 5px 15px 5px 15px;
+    border-width: 2px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
     color: #000;
 }
 
