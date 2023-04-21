@@ -25,6 +25,7 @@ session_start();
     <div id="right_div">
         <?php require './elements_TMNN/right.php'; ?>
     </div>
+    
     <div id="bottom_div"></div>
     <div id="signoutbutton">
         <a href="../index.php">

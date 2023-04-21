@@ -9,9 +9,15 @@ body {
 }
 
 #left_div {
-    height: 500px;
-    width: 10%;
+    height: 200px;
+    width: 9%;
     float: left;
+    text-align: center;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    margin-right: 10px;
 }
 
 #center_div {
@@ -49,6 +55,18 @@ p {
 
 .cateOrder {
     font-weight: bold;
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+}
+
+.cateOrder:hover {
+    background-color: #e2a428;
+}
+
+#cssmenu {
+    padding-top: 5px;
+    margin-bottom: 20px;
 }
 
 .itemOrder {
@@ -130,7 +148,6 @@ a {
     z-index: 2;
     top: 10px;
     right: 10px;
-    opacity: 0.75;
 }
 
 .imgtable {
@@ -155,6 +172,14 @@ a {
     padding-top: 15px;
     font-size: 20px;
     font-weight: bold;
+    width: 50%;
+    height: 120px;
+    position: relative;
+    left: 20%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
 #logincenter {
@@ -164,6 +189,7 @@ a {
     width: 500px;
     align-items: center;
     padding: 20px;
+    box-shadow: -10px 10px 1000px #CE9F41;
 }
 
 .loginbody {
@@ -177,11 +203,14 @@ a {
 input {
     font-size: 15px;
     background-color: antiquewhite;
-    padding: 8px;
     border-width: 3px;
-    border-radius: 15px;
+    padding: 5px 15px 5px 15px;
     border-style: ridge;
     color: #000;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 button {

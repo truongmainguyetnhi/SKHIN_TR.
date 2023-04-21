@@ -5,7 +5,7 @@
         <title></title>
     </head>
     <body>
-        <div>MENU</div>
+        <div id="cssmenu">MENU</div>
         <div class="cateOrder">
             <a href="#">Quản lý</a>
         </div>
@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="cateOrder">
-            <a href="#">Ex jquery</a>
+            <a href="#">Perect</a>
         </div>
         <div class="itemOrder">
             <ul>
