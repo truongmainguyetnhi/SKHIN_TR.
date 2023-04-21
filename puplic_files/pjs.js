@@ -105,8 +105,6 @@ function inputchange() {
             var productName = inputValue.parentElement.parentElement.querySelector(".title").innerHTML
             var res = getLocalDataValue();
             var productChange = res.find(x => x.productName === productName)
-            console.log(productName)
-            console.log(productChange)
             if (productChange != null && productChange != undefined) {
                 productChange.inputValue = inputValue.value;
                 localStorage.setItem("mind", JSON.stringify(res))
