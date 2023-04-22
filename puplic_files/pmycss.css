@@ -256,7 +256,7 @@ button:hover {
 
 .cart_icon sup {
     background-color: #000;
-    border-radius: 50%;
+    border-radius: 100px;
     padding: 5px 9px;
     color: #CE9F41;
 }
@@ -267,4 +267,13 @@ button:hover {
 
 .x {
     height: 30px;
+}
+
+.x:hover {
+    height: 35px;
+}
+
+.delete:hover {
+    color: red;
+    font-size: 20px;
 }

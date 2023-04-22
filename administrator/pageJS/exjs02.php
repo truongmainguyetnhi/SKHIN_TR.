@@ -11,7 +11,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Scripting/EmptyPHPWebPage.php to 
 </head>
 
 <body align="center">
-    <h4>Slide Image</h4>
+    <h4>Englot</h4>
     <div align="center" id="DivSlideImage">
         <img id="imgView" src="./img_TMNN/el.jpg" />
         <div id="DivList">
