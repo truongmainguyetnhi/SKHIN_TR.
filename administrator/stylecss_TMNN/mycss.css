@@ -1,5 +1,5 @@
 body {
-    background-color: #CE9F41;
+    background-color: #e7b790;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -61,7 +61,7 @@ p {
 }
 
 .cateOrder:hover {
-    background-color: #e2a428;
+    background-color: #e5a067;
 }
 
 #cssmenu {
@@ -182,7 +182,8 @@ a {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-#logincenter {
+
+/* #logincenter {
     margin: 280px 200px;
     border-radius: 20px;
     background-color: #CE9F41;
@@ -190,17 +191,107 @@ a {
     align-items: center;
     padding: 20px;
     box-shadow: -10px 10px 1000px #CE9F41;
-}
+} */
 
-.loginbody {
+
+/* .loginbody {
     background-image: url(../img_TMNN/loginbg.png);
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
     font-size: 20px;
+} */
+
+.loginbody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    background: url(../img_TMNN/bgel.jpg) no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-color: #000;
 }
 
-input {
+#logincenter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: auto;
+}
+
+#logincenter .form_box {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #000;
+}
+
+.form_box h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.form_box .input_box {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 30px 0;
+    border-bottom: 2px solid #000;
+}
+
+.form_box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    padding-right: 28px;
+}
+
+.input_box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input_box input:valid~label {
+    top: -5px;
+}
+
+.btnut {
+    width: 100%;
+    height: 45px;
+    background: #e7b790;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#formreg input,
+#formupdate input,
+#formadd_loaihang input,
+#formupdate input,
+#formupdate input,
+#formadd_hanghoa input {
     font-size: 15px;
     background-color: antiquewhite;
     border-width: 2px;
@@ -212,7 +303,7 @@ input {
     border-bottom-left-radius: 5px;
 }
 
-button {
+#formupdate button {
     font-size: 15px;
     background-color: antiquewhite;
     padding: 5px 15px 5px 15px;

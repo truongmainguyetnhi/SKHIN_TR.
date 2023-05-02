@@ -9,6 +9,6 @@
             echo "This is page 01";
         ?>
         <br>
-        <img src="/administrator/img_TMNN/englot.jpg" width="500px">
+        <img src="/administrator/img_TMNN/arlo1.png" width="500px">
     </body>
 </html>

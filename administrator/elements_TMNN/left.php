@@ -17,7 +17,7 @@
             </ul>
         </div>
         <div class="cateOrder">
-            <a href="#">Perect</a>
+            <a href="#">Perfect</a>
         </div>
         <div class="itemOrder">
             <ul>

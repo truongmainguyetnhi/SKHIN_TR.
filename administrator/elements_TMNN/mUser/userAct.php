@@ -82,7 +82,7 @@
                 }
                 break;
                 case 'userlogout':
-                    $timelogin = date('h:i - d/m/Y', strtotime('+17hours'));
+                    $timelogin = date('h:i - d/m/Y', strtotime('-7hours'));
                     if (isset($_SESSION['USER'])) {
                         $namelogin = $_SESSION['USER'];
                     }
