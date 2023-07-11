@@ -167,6 +167,9 @@ button {
 
 .gio {
     color: #000;
+    width: 250px;
+    height: 35px;
+    font-size: 16px;
 }
 
 .gio:hover {
@@ -187,7 +190,8 @@ button:hover {
 .imgViewHangHoa {
     height: auto;
     width: 100%;
-    border-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 #giathamkhao {
