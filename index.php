@@ -43,21 +43,22 @@ session_start();
                         <li>
                             <div id="signoutbutton">
                                 <a href="administrator/elements_TMNN/mUser/userAct.php?reqact=userlogout">
-                                    <img src="administrator/img_TMNN/logout.png" height="30px"/>
+                                    <img src="administrator/img_TMNN/logout.png" height="30px" />
                                 </a>
                             </div>
                         </li>
                         <li>
-                        <div class="cart_icon"><img src="administrator/img_TMNN/cart.png" height="30px">
-                            <sup> 0 </sup></div>
+                            <div class="cart_icon"><img src="administrator/img_TMNN/cart.png" height="30px">
+                                <sup> 0 </sup>
+                            </div>
                         </li>
-                        
+
                     </ul>
                 </nav>
             </div>
         </header>
-        <div id="banner">  
-            
+        <div id="banner">
+
         </div>
         <div id="content" class="container">
             <h1>Best seller</h1>
@@ -74,10 +75,10 @@ session_start();
         </div>
     </div>
     <section class="cart">
-        <img align="left" class="x" src="administrator/img_TMNN/x.png" >
+        <img align="left" class="x" src="administrator/img_TMNN/x.png">
         <h2>Giỏ hàng</h2>
         <form action="">
-            <table >
+            <table>
                 <thead>
                     <tr>
                         <th>Sản phẩm</th>
@@ -87,13 +88,13 @@ session_start();
                     </tr>
                 </thead>
                 <tbody id="myTable">
-                    
+
                 </tbody>
             </table>
             <div class="price_total">
                 <p>Tổng tiền: <span>0</span><sup>₫</sup></p>
             </div>
-            <button>Thanh toán</button>
+            <button style="width: 200px; height: 40px;">Thanh toán</button>
         </form>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.4.js" type="text/javascript"></script>
