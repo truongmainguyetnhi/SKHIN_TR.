@@ -15,10 +15,10 @@
         <hr>
         <div id="menu">
             No Ajax <br> 
-            <a href="../../administrator/pageJS/page01.php">Page 01</a>
-            <a href="../../administrator/pageJS/page02.php">Page 02</a>
-            <a href="../../administrator/pageJS/page03.php">Page 03</a>
-            <a href="../../administrator/pageJS/page04.php">Page 04</a>
+            <a href="index.php?req=exjs03&page=page01">Page 01</a>
+            <a href="index.php?req=exjs03&page=page02">Page 02</a>
+            <a href="index.php?req=exjs03&page=page03">Page 03</a>
+            <a href="index.php?req=exjs03&page=page04">Page 04</a>
             <hr>
             Use Ajax <br> 
             <b class="linkpage" value="page01">Page 01</b><br>
@@ -31,7 +31,7 @@
             <?php
             if (isset($_GET["page"])) {
                 $page = $_GET["page"];
-                include './pageJS' . $page . '.php';
+                include './pageJS/' . $page . '.php';
             } else {
                 echo "Nothing to show!";
             }
