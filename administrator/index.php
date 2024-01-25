@@ -12,7 +12,7 @@ session_start();
 </head>
 
 <body>
-    
+
     <div id="top_div">
         <?php require './elements_TMNN/top.php'; ?>
     </div>
@@ -25,7 +25,7 @@ session_start();
     <div id="right_div">
         <?php require './elements_TMNN/right.php'; ?>
     </div>
-    
+
     <div id="bottom_div"></div>
     <div id="signoutbutton">
         <a href="../index.php">
